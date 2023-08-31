@@ -44,7 +44,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let itemId = goodsList[indexPath.row].id
         urlId = "https://www.avito.st/s/interns-ios/details/\(itemId).json"
         fetchDataId()
-        //  print("id \(itemId) selected \(urlId)" )
+         print("id \(itemId) selected \(urlId)" )
         let destination = LastViewController()
         navigationController?.pushViewController(destination, animated: true)
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         destination.goodsMailLabel.text = goodsListID?.email
         destination.goodsNumberLabel.text = goodsListID?.phoneNumber
         destination.goodsAdressLabel.text = goodsListID?.address
-        print(destination)
+        print(destination.goodsDateLabel.text)
        // print(destination.urlId)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
