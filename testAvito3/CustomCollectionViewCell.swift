@@ -15,7 +15,6 @@ class CustomCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage()
         imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true
         return imageView
     }()
     let goodsTitleLabel: UILabel = {
